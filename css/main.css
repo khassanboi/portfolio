@@ -318,8 +318,8 @@ p.light {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(74, 99, 231, 0.95)), to(rgba(52, 152, 219, 0.9))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right bottom, rgba(74, 99, 231, 0.95), rgba(52, 152, 219, 0.9)), url(../img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(74, 99, 231, 0.95)), to(rgba(52, 152, 219, 0.9)));
+  background-image: linear-gradient(to right bottom, rgba(74, 99, 231, 0.95), rgba(52, 152, 219, 0.9));
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
