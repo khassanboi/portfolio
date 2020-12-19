@@ -1,0 +1,236 @@
+.nav {
+    width: 28rem;
+    position: sticky;
+    transition: all .5s;
+    height: 55rem;
+    background-image: linear-gradient(to right bottom, $primary-dark, $primary-light);
+    box-shadow: $shadow;
+    padding: 3rem;
+    padding-bottom: 2.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
+    overflow-y: scroll;
+    z-index: 999;
+
+
+    &::-webkit-scrollbar {
+        width: 2rem;
+        height: 1.5rem;
+    }
+     
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 1rem;
+    }
+     
+    &::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: rgba(#fff, .5);
+        border: .5rem solid transparent;
+        background-clip: padding-box;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(#fff, .8);
+    }
+
+    &::-webkit-scrollbar-track-piece:end {
+        background: transparent;
+        margin-bottom: 7rem; 
+    }
+    
+    &::-webkit-scrollbar-track-piece:start {
+        background: transparent;
+        margin-top: 7rem;
+    }
+    
+    @media only screen and (min-width: $bp-lg) {
+        height: 85vh;
+    }
+    
+    @media only screen and (max-width: $bp-lg) {
+        top: 4rem;
+        left: 4rem;
+        width: 30rem;
+    }
+    
+    @media only screen and (max-width: 1100px) {
+        width: 25rem;
+    }
+    
+    @media only screen and (max-width: $bp-sm) {
+        transform: translateX(-140%);
+    }
+    
+    @media only screen and (max-width: $bp-xs) {
+        top: 2rem;
+        left: 2rem;
+        width: 25rem;
+    }
+
+    &__x {
+        display: none;
+
+        @media only screen and (max-width: $bp-sm) {
+            display: block;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            width: 3rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $tertiary-dark;
+            cursor: pointer;
+        }
+        
+    }
+
+    &__img {
+        width: 7rem;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+
+    &__slogan {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-top: 0.7rem;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        list-style: none;
+        margin-left: -3rem;
+    }
+
+    &__item {
+        padding-left: 3rem;
+        margin: 1.5rem 0;
+        transition: all 0.6s;
+        backface-visibility: hidden;
+        width: fit-content;
+
+        &:hover {
+            padding-left: 4rem;
+        }
+    }
+
+    &__item-link {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: #fff;
+        font-family: $font-display;
+    }
+
+    &__item-icon {
+        height: 1.4rem;
+        width: 1.4rem;
+        fill: currentColor;
+        margin-right: 1.4rem;
+    }
+
+    &__account-list {
+        list-style: none;
+        display: flex;
+    }
+    
+    &__account-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: $tertiary-light;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: #fff;
+
+            .nav__account-icon {
+                fill: $tertiary-light;
+            }
+        }
+    }
+
+    &__account-link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__account-icon {
+        height: 1.7rem;
+        width: 1.7rem;
+        fill: #fff;
+    }
+
+    &__copyright {
+        justify-content: end;
+        margin-top: 2rem;
+        color: #eee;
+    }
+
+}
+
+.simplebar-scrollbar::before {
+    background-color: #fff;
+}
+
+.nav-visible {
+    transform: translateX(0);
+}
+
+.nav-line {
+    display: none;
+
+    @media only screen and (max-width: $bp-sm) {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 2rem;
+        grid-column: nav-start / main-end;
+        height: min-content;
+        background-color: $primary-dark;
+        height: fit-content;
+        box-shadow: $shadow;
+        border-radius: 2rem;
+        transition: all .5s;
+
+        &-visible {
+            @include nav-visible;
+        }
+
+        img {
+            margin: 0 2rem;
+            width: 5rem;
+
+        }
+
+        .nav-btn {
+            
+            &__icon {
+                height: 4rem;
+                width: 4rem;
+                fill: #fff;
+            }
+        }
+    }
+
+}

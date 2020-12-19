@@ -1,0 +1,133 @@
+p {
+    font-size: 1.4rem;
+    font-family: $font-primary;
+    color: #777;
+
+    &.light {
+        color: #fff;
+    }
+}
+
+.h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: $font-display;
+    color: #fff;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 0.8rem;
+        width: 0.8rem;
+        border-radius: 50%;
+        background-color: $tertiary-light;
+        position: absolute;
+        bottom: 4px;
+        margin-left: 3px;
+    }
+}
+
+.h2 {
+    grid-column: 1 / -1;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: $font-display;
+    color: #000;
+    position: relative;
+
+    &::after {
+        content: "";
+        background: $tertiary-light;
+        border-radius: 2rem;
+        display: block;
+        height: .5rem;
+        margin-top: 1rem;
+        width: 3rem;
+    }
+}
+
+.h3 {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: $font-display;
+    color: #000;
+}
+
+.h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: $font-display;
+    color: #000;
+}
+
+//BUTTONS//
+
+.btn,
+.btn:link,
+.btn:visited {
+    border-radius: 100rem;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+    box-shadow: $shadow-btn;
+    backface-visibility: hidden;
+
+    &:hover {
+        transform: translateY(-0.5rem);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: $shadow-btn-active;
+    }
+
+    svg {
+        height: 1.6rem;
+        width: 1.6rem;
+        fill: currentColor;
+        margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-xxs) {
+        width: 20rem;
+    }
+}
+
+.btn--primary {
+    background-color: $tertiary-light;
+    border: 1px solid $tertiary-light;
+
+    &:hover {
+        background-color: $tertiary-dark;
+        border: 1px solid $tertiary-dark;
+    }
+}
+
+.btn--secondary {
+    background-color: $primary-light;
+    border: 1px solid $primary-light;
+
+    &:hover {
+        background-color: $primary-dark;
+        border: 1px solid $primary-dark;
+    }
+}
+
+.btn--light {
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    &:hover {
+        background-color: #fff;
+        color: #777;
+    }
+}
+

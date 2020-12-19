@@ -1,0 +1,29 @@
+@mixin nav-visible {
+    @media only screen and (max-width: $bp-sm) {
+        transform: translateX(30%);
+    }
+    
+    @media only screen and (max-width: 700px) {
+        transform: translateX(40%);
+    }
+    
+    @media only screen and (max-width: $bp-xs) {
+        transform: translateX(50%);
+    }
+    
+    @media only screen and (max-width: $bp-xxs) {
+        transform: translateX(60%);
+    }
+    
+    @media only screen and (max-width: 400px) {
+        transform: translateX(75%);
+    }
+    
+    @media only screen and (max-width: 350px) {
+        transform: translateX(85%);
+    }
+    
+    @media only screen and (max-width: 300px) {
+        transform: translateX(95%);
+    }  
+}

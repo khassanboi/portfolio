@@ -1,0 +1,118 @@
+//COLORS//
+$primary-light: #3498db;
+$primary-dark: #4a63e7;
+$secondary-light: #2ecc71;
+$secondary-dark: #27ae60;
+$tertiary-light: #ff5959;
+$tertiary-dark: #e65050;
+
+//FONTS//
+$font-primary: 'Open Sans', sans-serif;
+$font-display: 'Poppins', sans-serif;
+
+//SHADOWS//
+$shadow: 0px 6px 15px rgba(0, 0, 0, .2);
+$shadow-btn: 0px 10px 20px rgba(0, 0, 0, .2);
+$shadow-btn-active: 0px 5px 10px rgba(0, 0, 0, .3);
+
+//BREAKPOINTS//
+$bp-xl:   81.25em;       //1300px
+$bp-lg:      75em;       //1200px
+$bp-md:   56.25em;       // 900px
+$bp-sm:      50em;       // 800px
+$bp-xs:    37.5em;       // 600px
+$bp-xxs:  31.25em;       // 500px
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;            //10px
+    overflow-x: hidden;
+
+    @media only screen and (max-width: $bp-lg) {
+        font-size: 50%;          
+    }
+    
+    @media only screen and (max-width: $bp-md) {
+        font-size: 45%;    
+    }
+
+    @media only screen and (max-width: $bp-xxs) {
+        font-size: 40%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: #777;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative
+}
+
+.container {
+    transition: all .2s; 
+    padding: 5rem 0;
+    background-color: rgba($primary-dark, 0.1);
+    display: grid;
+    grid-template-columns: [border-left-start]   .2fr      [border-left-end 
+                            nav-start]          1.9fr    [nav-end 
+                            main-start]           6fr      [main-end 
+                            border-right-start]  .2fr      [border-right-end];
+    grid-template-rows: min-content minmax(min-content, 55rem);
+    grid-gap: 4rem;
+    
+    @media only screen and (max-width: $bp-lg) {
+        padding: 4rem 0;
+        grid-template-columns: [border-left-start]   .2fr    [border-left-end 
+                            nav-start]              1.9fr    [nav-end 
+                            main-start]               6fr    [main-end 
+                            border-right-start]      .2fr    [border-right-end];
+        grid-gap: 3rem;
+    }
+    
+    @media only screen and (max-width: 1100px) {
+        padding: 4rem 0;
+        grid-template-columns: [border-left-start]   .2fr    [border-left-end 
+                            nav-start]                2fr    [nav-end 
+                            main-start]               6fr    [main-end 
+                            border-right-start]      .2fr    [border-right-end];
+        grid-gap: 3rem;
+    }
+    
+    @media only screen and (max-width: $bp-xs) {
+        padding: 2rem;
+        grid-template-columns: [nav-start]       2fr    [nav-end 
+                               main-start]       6fr    [main-end];
+        grid-gap: 2rem;
+    }
+    
+}
+
+section {
+    padding: 7rem 5rem;
+    grid-column: main-start / main-end;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 2rem;  
+    transition: all .5s; 
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-column: nav-start / main-end;
+    }
+}
+
+.section-visible {
+    @include nav-visible;
+}
