@@ -22,7 +22,7 @@ p {
         height: 0.8rem;
         width: 0.8rem;
         border-radius: 50%;
-        background-color: $tertiary-light;
+        background-color: $accent-light;
         position: absolute;
         bottom: 4px;
         margin-left: 3px;
@@ -39,10 +39,10 @@ p {
 
     &::after {
         content: "";
-        background: $tertiary-light;
+        background: $accent-light;
         border-radius: 2rem;
         display: block;
-        height: .5rem;
+        height: 0.5rem;
         margin-top: 1rem;
         width: 3rem;
     }
@@ -102,12 +102,12 @@ p {
 }
 
 .btn--primary {
-    background-color: $tertiary-light;
-    border: 1px solid $tertiary-light;
+    background-color: $accent-light;
+    border: 1px solid $accent-light;
 
     &:hover {
-        background-color: $tertiary-dark;
-        border: 1px solid $tertiary-dark;
+        background-color: $accent-dark;
+        border: 1px solid $accent-dark;
     }
 }
 
@@ -130,4 +130,3 @@ p {
         color: #777;
     }
 }
-

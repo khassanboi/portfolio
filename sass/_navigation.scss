@@ -1,7 +1,7 @@
 .nav {
     width: 28rem;
     position: sticky;
-    transition: all .5s;
+    transition: all 0.5s;
     height: 55rem;
     background-image: linear-gradient(to right bottom, $primary-dark, $primary-light);
     box-shadow: $shadow;
@@ -17,56 +17,55 @@
     overflow-y: scroll;
     z-index: 999;
 
-
     &::-webkit-scrollbar {
         width: 2rem;
         height: 1.5rem;
     }
-     
+
     &::-webkit-scrollbar-track {
         background: transparent;
         border-radius: 1rem;
     }
-     
+
     &::-webkit-scrollbar-thumb {
         border-radius: 1rem;
-        background-color: rgba(#fff, .5);
-        border: .5rem solid transparent;
+        background-color: rgba(#fff, 0.5);
+        border: 0.5rem solid transparent;
         background-clip: padding-box;
     }
 
     &:hover::-webkit-scrollbar-thumb {
-        background-color: rgba(#fff, .8);
+        background-color: rgba(#fff, 0.8);
     }
 
     &::-webkit-scrollbar-track-piece:end {
         background: transparent;
-        margin-bottom: 7rem; 
+        margin-bottom: 7rem;
     }
-    
+
     &::-webkit-scrollbar-track-piece:start {
         background: transparent;
         margin-top: 7rem;
     }
-    
+
     @media only screen and (min-width: $bp-lg) {
         height: 85vh;
     }
-    
+
     @media only screen and (max-width: $bp-lg) {
         top: 4rem;
         left: 4rem;
         width: 30rem;
     }
-    
+
     @media only screen and (max-width: 1100px) {
         width: 25rem;
     }
-    
+
     @media only screen and (max-width: $bp-sm) {
         transform: translateX(-140%);
     }
-    
+
     @media only screen and (max-width: $bp-xs) {
         top: 2rem;
         left: 2rem;
@@ -89,10 +88,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: $tertiary-dark;
+            color: $accent-dark;
             cursor: pointer;
         }
-        
     }
 
     &__img {
@@ -146,14 +144,14 @@
         list-style: none;
         display: flex;
     }
-    
+
     &__account-item {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 3.5rem;
         height: 3.5rem;
-        background-color: $tertiary-light;
+        background-color: $accent-light;
         border-radius: 50%;
         margin-right: 0.5rem;
         transition: all 0.5s;
@@ -162,7 +160,7 @@
             background-color: #fff;
 
             .nav__account-icon {
-                fill: $tertiary-light;
+                fill: $accent-light;
             }
         }
     }
@@ -186,7 +184,6 @@
         margin-top: 2rem;
         color: #eee;
     }
-
 }
 
 .simplebar-scrollbar::before {
@@ -211,7 +208,7 @@
         height: fit-content;
         box-shadow: $shadow;
         border-radius: 2rem;
-        transition: all .5s;
+        transition: all 0.5s;
 
         &-visible {
             @include nav-visible;
@@ -220,11 +217,9 @@
         img {
             margin: 0 2rem;
             width: 5rem;
-
         }
 
         .nav-btn {
-            
             &__icon {
                 height: 4rem;
                 width: 4rem;
@@ -232,5 +227,4 @@
             }
         }
     }
-
 }

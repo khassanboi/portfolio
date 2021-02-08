@@ -134,14 +134,7 @@
         box-shadow: $shadow;
         position: relative;
         overflow: hidden;
-
-        @media only screen and (max-width: $bp-sm) {
-            height: 30rem;
-        }
-
-        @media only screen and (max-width: 400px) {
-            height: 25rem;
-        }
+        height: fit-content;
     }
 
     &__item-img {
@@ -168,7 +161,8 @@
         z-index: 5;
 
         @media only screen and (max-width: $bp-sm) {
-            height: 40%;
+            height: 12rem;
+            padding-top: 2rem;
         }
 
         @media only screen and (max-width: $bp-xxs) {
@@ -183,6 +177,10 @@
         grid-column: 1 / -1;
         transition: all 0.5s;
         backface-visibility: hidden;
+
+        @media only screen and (max-width: $bp-sm) {
+            margin: 0;
+        }
     }
 
     .btn {
@@ -245,7 +243,7 @@
         font-family: $font-display;
         text-decoration: none;
         color: #fff;
-        background-color: $tertiary-light;
+        background-color: $accent-light;
         padding: 1rem 5rem;
         border-radius: 10rem;
         display: flex;
@@ -286,7 +284,7 @@
     &__account:active {
         background-image: none;
         background-color: #fff;
-        color: $tertiary-light;
+        color: $accent-light;
         transform: scale(1.15);
     }
 
