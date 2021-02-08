@@ -45,10 +45,9 @@
     }
 
     &__detail {
-
         @media only screen and (max-width: $bp-xxs) {
             display: grid;
-            grid-template-columns: .6fr 1fr;
+            grid-template-columns: 0.6fr 1fr;
         }
 
         span {
@@ -87,167 +86,34 @@
         grid-column-gap: 3rem;
 
         @media only screen and (max-width: $bp-xxs) {
-            grid-template-columns: 1fr;
-            grid-row-gap: 5rem;
-
-            .skill-background {
-                display: none;
-            }
-
-            .skill-logo {
-                display: block;
-            }
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
     &__card {
-        height: 23vw;
-        width: 100%;
-        perspective: 150rem;
-        position: relative;
-        backface-visibility: hidden;
-        grid-template-rows: 1fr;
-        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
 
-        &:hover &-side--front {
-            transform: rotateY(-180deg);
+        .h3 {
+            margin: 1rem 0;
         }
 
-        &:hover &-side--back {
-            transform: rotateY(0deg);
+        ul {
+            list-style: none;
 
-            @media only screen and (max-width: $bp-xs) {
-                transform: scale(1.05);
-                box-shadow: $shadow-btn-active;
+            li {
+                font-size: 1.3rem;
+                font-family: $font-primary;
+                color: #777;
+                padding: 0.5rem 0;
             }
-        }
-
-        &--html &-side--front {
-            background-color: #fff4e0;
-            border: .4rem solid orange;
-            border-radius: 1rem;
-        }
-
-        &--css &-side--front {
-            background-color: #d4d9ff;
-            border: .4rem solid royalblue;
-            border-radius: 1rem;
-        }
-
-        &--js &-side--front {
-            background-color: #fdffd4;
-            border: .4rem solid #e3b612;
-            border-radius: 1rem;
-        }
-
-        &--html &-side--back {
-            background-color: #fff4e0;
-        }
-
-        &--css &-side--back {
-            background-color: #d4d9ff;
-        }
-
-        &--js &-side--back {
-            background-color: #fdffd4;
         }
 
         @media only screen and (max-width: $bp-xxs) {
-            height: 38vw;
+            padding: 2rem 0;
 
-            &--html &-side--back {
-                border: .5rem solid orange;
-                border-radius: 1rem;
-            }
-
-            &--css &-side--back {
-                border: .5rem solid royalblue;
-                border-radius: 1rem;
-            }
-
-            &--js &-side--back {
-                border: .5rem solid #e3b612;
-                border-radius: 1rem;
-            }
-        }
-    }
-
-    &__card-side {
-        width: 100%;
-        height: 23vw;
-        transition: all .8s;
-        position: absolute;
-        top: 0;
-        left: 0;
-        backface-visibility: hidden;
-        border-radius: 3px;
-        box-shadow: $shadow;
-
-        @media only screen and (max-width: $bp-xxs) {
-            position: relative;
-            backface-visibility: visible;
-            height: 25vw;
-        }
-
-
-        &--front {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-
-            @media only screen and (max-width: $bp-xs) {
-                display: none;
-            }
-
-            img {
-                height: 60%;
-                width: auto;
-            }
-        }
-
-        &--back {
-            transform: rotateY(180deg);
-            background-color: #fff7c7;
-
-            @media only screen and (max-width: $bp-xs) {
-                transform: rotateY(0);
-                padding-bottom: 3rem;
-                border: 2px solid transparent;
-            }
-
-            img {
-                width: 100%;
-            }
-
-            ul {
-                padding: 2rem 4rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                li {
-                    font-size: 1.2rem;
-                }
-            }
-
-            @media only screen and (max-width: $bp-xxs) {
-                display: grid;
-                grid-template-columns: .7fr 1fr;
-                padding: 1rem 1rem;
-                height: 38vw;
-            }
-
-            .skill-logo {
-                display: none;
-                height: 80%;
-                width: auto;
-                align-self: center;
-                justify-self: center;
-
-                @media only screen and (max-width: $bp-xxs) {
-                    display: block;
-                }
+            &:last-child {
+                grid-column: 1 / -1;
             }
         }
     }
@@ -310,7 +176,6 @@
         }
     }
 
-
     &__item-details .h4 {
         justify-self: center;
         margin-top: 2rem;
@@ -361,7 +226,6 @@
             }
         }
     }
-
 }
 
 .contacts {
@@ -375,7 +239,6 @@
         grid-template-columns: 1fr;
     }
 
-
     &__account:link,
     &__account:visited {
         font-size: 2rem;
@@ -388,7 +251,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: transform .5s, background-color .3s;
+        transition: transform 0.5s, background-color 0.3s;
         backface-visibility: hidden;
 
         @media only screen and (max-width: $bp-xs) {
@@ -412,7 +275,6 @@
         @media only screen and (max-width: $bp-xs) {
             font-size: 1.4rem;
             padding: 1.5rem 4rem;
-
 
             svg {
                 display: none;
@@ -452,7 +314,7 @@
         padding: 0 14rem;
         grid-column: 1 / -1;
         display: grid;
-        grid-template-columns: .3fr 1fr;
+        grid-template-columns: 0.3fr 1fr;
         grid-gap: 2.5rem;
         align-items: center;
 
@@ -481,7 +343,7 @@
             border-radius: 10rem;
             background-color: #fff;
             padding: 1.2rem 2rem;
-            transition: box-shadow .3s;
+            transition: box-shadow 0.3s;
             font-size: 1.2rem;
 
             &:placeholder-shown {
@@ -491,7 +353,7 @@
             }
 
             &:focus {
-                box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
             }
         }
 
