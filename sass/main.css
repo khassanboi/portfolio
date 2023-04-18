@@ -793,15 +793,20 @@ p.light {
 }
 .projects__link {
   display: flex;
-  color: #ff5959;
+  color: #e65050;
+  font-size: 5rem;
   transition: all 0.5s;
   backface-visibility: hidden;
-  text-decoration: none;
-  align-self: center;
 }
-.projects__link:hover {
-  color: #e65050;
-  text-decoration: underline;
+@media only screen and (max-width: 50em) {
+  .projects__link {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .projects__link {
+    font-size: 1rem;
+  }
 }
 .projects__link {
   color: #e65050;

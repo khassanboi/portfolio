@@ -1,494 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="css/main.min.css" />
-        <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
-        <title>Portfolio | Hassan Khabibullaev</title>
-    </head>
-    <body class="container">
-        <div class="nav-line">
-            <a href="#" id="nav-btn">
-                <svg class="nav-btn__icon">
-                    <use xlink:href="fonts/sprite.svg#i-menu"></use>
-                </svg>
-            </a>
-            <img src="img/avatar.jpg" alt="Profile Photo" class="nav__img" />
-            <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
+    <title>Portfolio | Hassan Khabibullaev</title>
+  </head>
+  <body class="container">
+    <div class="nav-line">
+      <a href="#" id="nav-btn">
+        <svg class="nav-btn__icon">
+          <use xlink:href="fonts/sprite.svg#i-menu"></use>
+        </svg>
+      </a>
+      <img src="img/avatar.jpg" alt="Profile Photo" class="nav__img" />
+      <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
+    </div>
+    <nav class="nav">
+      <span class="nav__x">&#10005; </span
+      ><img src="img/avatar.jpg" alt="Profile Photo" class="nav__img left" />
+      <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
+      <p class="nav__slogan">
+        Software Engineer | <br />
+        Web Developer
+      </p>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__item-link js--scroll-to-header">
+            <svg class="nav__item-icon">
+              <use xlink:href="fonts/sprite.svg#i-home"></use>
+            </svg>
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link js--scroll-to-about">
+            <svg class="nav__item-icon">
+              <use xlink:href="fonts/sprite.svg#i-profile"></use>
+            </svg>
+            About
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link js--scroll-to-skills">
+            <svg class="nav__item-icon">
+              <use xlink:href="fonts/sprite.svg#i-skill"></use>
+            </svg>
+            Skills
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link js--scroll-to-projects">
+            <svg class="nav__item-icon">
+              <use xlink:href="fonts/sprite.svg#i-project"></use>
+            </svg>
+            Projects
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link js--scroll-to-contacts">
+            <svg class="nav__item-icon">
+              <use xlink:href="fonts/sprite.svg#i-phone"></use>
+            </svg>
+            Contacts
+          </a>
+        </li>
+      </ul>
+      <ul class="nav__account-list">
+        <li class="nav__account-item">
+          <a
+            href="https://www.facebook.com/khassanboi/"
+            class="nav__account-link"
+            target="_blank"
+          >
+            <svg class="nav__account-icon">
+              <use xlink:href="fonts/sprite.svg#i-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__account-item">
+          <a
+            href="https://www.instagram.com/khassanboi/"
+            class="nav__account-link"
+            target="_blank"
+          >
+            <svg class="nav__account-icon">
+              <use xlink:href="fonts/sprite.svg#i-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__account-item">
+          <a
+            href="https://telegram.me/khassanboi/"
+            class="nav__account-link"
+            target="_blank"
+          >
+            <svg class="nav__account-icon">
+              <use xlink:href="fonts/sprite.svg#i-telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__account-item">
+          <a
+            href="https://github.com/khassanboi"
+            class="nav__account-link"
+            target="_blank"
+          >
+            <svg class="nav__account-icon">
+              <use xlink:href="fonts/sprite.svg#i-github"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="nav__copyright">&copy; 2023 Hassan Khabibullaev</p>
+    </nav>
+    <header data-index="0" class="header" id="header">
+      <h1 class="h1 header__h1">I'm Hassan Khabibullaev</h1>
+      <p class="light header__p">
+        I don't make a bug. I may accidentally include an undocumented feature.
+      </p>
+      <div class="header__buttons">
+        <a
+          href="resources/Resume - Khasanboy Khabibulaev.pdf"
+          class="btn btn--primary header__btn"
+          target="_blank"
+        >
+          <svg>
+            <use xlink:href="fonts/sprite.svg#i-portfolio"></use>
+          </svg>
+          View Resumé
+        </a>
+        <a href="#" class="btn btn--light header__btn js--scroll-to-contacts">
+          <svg>
+            <use xlink:href="fonts/sprite.svg#i-hire"></use>
+          </svg>
+          Hire Me
+        </a>
+      </div>
+    </header>
+    <section data-index="1" class="about" id="about">
+      <h2 class="h2">About Me</h2>
+      <img src="img/avatar.jpg" alt="Profile Photo" class="about__img" />
+      <div class="about__content">
+        <h3 class="h3">Hello,</h3>
+        <p class="about__text">
+          As a Resourceful Web Developer, I have a strong understanding of
+          current technology trends and specialize in producing clean websites
+          and web applications. I am skilled in handling complex HTML, CSS, and
+          JS coding, as well as designing and implementing extensions to meet
+          specific front-facing needs. With a keen attention to detail, I work
+          closely with clients to define project expectations and requirements.
+          With a great sense of creativity and humour, it would be my pleasure
+          to collaborate with you !
+        </p>
+        <p class="about__detail">Name: <span>Hassan Khabibullaev</span></p>
+        <p class="about__detail">Age: <span>22</span></p>
+        <p class="about__detail">Location: <span>Tashkent, Uzbekistan</span></p>
+        <p class="about__detail">
+          Languages:
+          <span>Uzbek (Native), English (Fluent), Russian (Fluent)</span>
+        </p>
+        <div class="about__buttons">
+          <a
+            href="resources/Resume - Khasanboy Khabibulaev.pdf"
+            class="btn btn--primary about__btn"
+            target="_blank"
+          >
+            <svg>
+              <use xlink:href="fonts/sprite.svg#i-download"></use>
+            </svg>
+            Download Resumé/CV
+          </a>
+          <a
+            href="#"
+            class="btn btn--secondary about__btn js--scroll-to-contacts"
+          >
+            <svg>
+              <use xlink:href="fonts/sprite.svg#i-hire"></use>
+            </svg>
+            Hire Me
+          </a>
         </div>
-        <nav class="nav">
-            <span class="nav__x">&#10005; </span><img src="img/avatar.jpg" alt="Profile Photo" class="nav__img left" />
-            <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
-            <p class="nav__slogan">Web Frontend Developer</p>
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__item-link js--scroll-to-header">
-                        <svg class="nav__item-icon">
-                            <use xlink:href="fonts/sprite.svg#i-home"></use>
-                        </svg>
-                        Home
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__item-link js--scroll-to-about">
-                        <svg class="nav__item-icon">
-                            <use xlink:href="fonts/sprite.svg#i-profile"></use>
-                        </svg>
-                        About
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__item-link js--scroll-to-skills">
-                        <svg class="nav__item-icon">
-                            <use xlink:href="fonts/sprite.svg#i-skill"></use>
-                        </svg>
-                        Skills
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__item-link js--scroll-to-projects">
-                        <svg class="nav__item-icon">
-                            <use xlink:href="fonts/sprite.svg#i-project"></use>
-                        </svg>
-                        Projects
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__item-link js--scroll-to-contacts">
-                        <svg class="nav__item-icon">
-                            <use xlink:href="fonts/sprite.svg#i-phone"></use>
-                        </svg>
-                        Contacts
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav__account-list">
-                <li class="nav__account-item">
-                    <a href="https://www.facebook.com/khassanboi/" class="nav__account-link" target="_blank">
-                        <svg class="nav__account-icon">
-                            <use xlink:href="fonts/sprite.svg#i-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="nav__account-item">
-                    <a href="https://www.instagram.com/khassanboi/" class="nav__account-link" target="_blank">
-                        <svg class="nav__account-icon">
-                            <use xlink:href="fonts/sprite.svg#i-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="nav__account-item">
-                    <a href="https://telegram.me/khassanboi/" class="nav__account-link" target="_blank">
-                        <svg class="nav__account-icon">
-                            <use xlink:href="fonts/sprite.svg#i-telegram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="nav__account-item">
-                    <a href="https://github.com/khassanboi" class="nav__account-link" target="_blank">
-                        <svg class="nav__account-icon">
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <p class="nav__copyright">&copy; 2022 Hassan Khabibullaev</p>
-        </nav>
-        <header data-index="0" class="header" id="header">
-            <h1 class="h1 header__h1">I'm Hassan Khabibullaev</h1>
-            <p class="light header__p">I don't make a bug. I may accidentally include an undocumented feature.</p>
-            <div class="header__buttons">
-                <a href="resources/Resume - Khasanboy Khabibulaev.pdf" class="btn btn--primary header__btn" target="_blank">
-                    <svg>
-                        <use xlink:href="fonts/sprite.svg#i-portfolio"></use>
-                    </svg>
-                    View Resumé
-                </a>
-                <a href="#" class="btn btn--light header__btn js--scroll-to-contacts">
-                    <svg>
-                        <use xlink:href="fonts/sprite.svg#i-hire"></use>
-                    </svg>
-                    Hire Me
-                </a>
-            </div>
-        </header>
-        <section data-index="1" class="about" id="about">
-            <h2 class="h2">About Me</h2>
-            <img src="img/avatar.jpg" alt="Profile Photo" class="about__img" />
-            <div class="about__content">
-                <h3 class="h3">Hello,</h3>
-                <p class="about__text">
-                    I'm Hassan, Web Frontend Developer based in Tashkent, Uzbekistan. Currently I'm studying at Westminster International
-                    University in Tashkent majoring in Business Information Systems. With a great sense of creativity and humour, it would
-                    be my
-                    pleasure to collaborate with you !
-                </p>
-                <p class="about__detail">Name: <span>Hassan Khabibullaev</span></p>
-                <p class="about__detail">Age: <span>21</span></p>
-                <p class="about__detail">Location: <span>Tashkent, Uzbekistan</span></p>
-                <p class="about__detail">Occupation: <span>Student (WIUT)</span></p>
-                <p class="about__detail">Languages: <span>Uzbek, English, Russian</span></p>
-                <div class="about__buttons">
-                    <a href="resources/Resume - Khasanboy Khabibulaev.pdf" class="btn btn--primary about__btn" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-download"></use>
-                        </svg>
-                        Download CV
-                    </a>
-                    <a href="#" class="btn btn--secondary about__btn js--scroll-to-contacts">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-hire"></use>
-                        </svg>
-                        Hire Me
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section data-index="2" class="skills" id="skills">
-            <h2 class="h2">My Skills</h2>
-            <p class="p skills__text">
-                Starting from 2018, since I have started learning Web Frontend Development, I gained enough skills to become a Frontend Developer.
-                Three-months long course which I have taken in PDP education center was the foundation for occupying this job. Then I
-                decided to improve
-                my skills with self-study and took several online courses. Below, you can see my main technical skills related to mainly
-                Web Frontend Development
-            </p>
-            <div class="skills__content">
-                <div class="skills__card">
-                    <h3 class="h3">HTML</h3>
-                    <ul>
-                        <li>Semantic Development</li>
-                        <li>Form Validation</li>
-                        <li>Proper Usage of Tags and Attributes</li>
-                        <li>Dynamic Template Engines</li>
-                    </ul>
-                </div>
-                <div class="skills__card">
-                    <h3 class="h3">CSS</h3>
-                    <ul>
-                        <li>SASS(SCSS)</li>
-                        <li>Flexbox/Grid</li>
-                        <li>Bootstrap 3/4</li>
-                        <li>Adaptive/Responsive</li>
-                        <li>BEM Methodology</li>
-                        <li>Dynamic Style</li>
-                    </ul>
-                </div>
-                <div class="skills__card">
-                    <h3 class="h3">JavaScript</h3>
-                    <ul>
-                        <li>jQuery</li>
-                        <li>ReactJS (Basic)</li>
-                        <li>VueJS (Middle)</li>
-                        <li>Asynchronous Programming</li>
-                        <li>OOP</li>
-                        <li>DOM Manipulation</li>
-                    </ul>
-                </div>
-                <div class="skills__card">
-                    <h3 class="h3">Node.js</h3>
-                    <ul>
-                        <li>Express.js</li>
-                        <li>Pug.js</li>
-                    </ul>
-                </div>
-                <div class="skills__card">
-                    <h3 class="h3">Others</h3>
-                    <ul>
-                        <li>C#.NET</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section data-index="3" class="projects" id="projects">
-            <h2 class="h2">My Projects</h2>
-            <div class="projects__item">
-                <img src="img/projects/natours.jpg" alt="Natours Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Natours</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/natours" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/natours/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/trillo.jpg" alt="Trillo Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Trillo</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/trillo" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/trillo/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/nexter.jpg" alt="Nexter Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Nexter</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/nexter" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/nexter/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/beat-maker.jpg" alt="Beat-Maker Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Beat-Maker</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/beat-maker" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/beat-maker/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/todo-list.jpg" alt="To-Do List Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">To-Do List</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/todo-list" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/todo-list/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/coloors.jpg" alt="Coloors Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Coloors</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/coloors" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/coloors/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/dynamoo.jpg" alt="Dynamoo Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Dynamoo</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/dynamoo" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/dynamoo/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/imagery.jpg" alt="Imagery Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Imagery</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/imagery" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/imagery/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/axcapital-clone.jpg" alt="AX Capital CLone Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">AX Capital Clone</h4>
-                    <a href="https://github.com/khassanboi/small-projects/tree/main/axcapital-clone" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://projects.khassanboi.com/axcapital-clone/index.html" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/oliygoh.jpg" alt="AX Capital CLone Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Oliygoh</h4>
-                    <a href="https://github.com/khassanboi/oliygoh" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://oliygoh.khassanboi.com/" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/bloggy.jpg" alt="Bloggy Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Bloggy</h4>
-                    <a href="https://github.com/khassanboi/university-projects/tree/main/web-tech/cw2/bloggy" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://bloggy.khassanboi.com/" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/workandtravel.png" alt="Bloggy Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Work and Travel</h4>
-                    <a href="https://github.com/khassanboi/globalfriends-wt-page-22" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://workandtravel.uz/" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <img src="img/projects/campusa.png" alt="Bloggy Project Screenshot" class="projects__item-img" />
-                <div class="projects__item-details">
-                    <h4 class="h4">Camp USA</h4>
-                    <a href="https://github.com/khassanboi/globalfriends-camp-page" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-github"></use>
-                        </svg>
-                        Code
-                    </a>
-                    <a href="https://campusa.uz/" class="btn btn--primary" target="_blank">
-                        <svg>
-                            <use xlink:href="fonts/sprite.svg#i-embed"></use>
-                        </svg>
-                        Demo
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section data-index="4" class="contacts" id="contacts">
-            <h2 class="h2">Contact Me</h2>
-            <a href="https://www.facebook.com/khassanboi/" class="contacts__account" target="_blank">
-                <svg class="contacts__account-icon">
-                    <use xlink:href="fonts/sprite.svg#i-facebook"></use>
-                </svg>
-                Facebook
-            </a>
-            <a href="https://www.instagram.com/khassanboi/" class="contacts__account" target="_blank">
-                <svg class="contacts__account-icon">
-                    <use xlink:href="fonts/sprite.svg#i-instagram"></use>
-                </svg>
-                Instagram
-            </a>
-            <a href="https://telegram.me/khassanboi/" class="contacts__account" target="_blank">
-                <svg class="contacts__account-icon">
-                    <use xlink:href="fonts/sprite.svg#i-telegram"></use>
-                </svg>
-                Telegram
-            </a>
-            <a href="https://github.com/khassanboi" class="contacts__account" target="_blank">
-                <svg class="contacts__account-icon">
-                    <use xlink:href="fonts/sprite.svg#i-github"></use>
-                </svg>
-                Github
-            </a>
-            <a href="mailto:khassanboi@gmail.com" class="contacts__account contacts__account--email">khassanboi@gmail.com </a>
-            <h4 class="h4 contacts__h4">OR</h4>
-            <p class="contacts__p">fill the form below</p>
-            <form action="mailto:khassanboi@gmail.com" class="form" method="post" enctype="text/plain">
-                <label for="name" class="form__label">Name:</label
-                ><input type="text" class="form__input" id="name" placeholder="Type your name" name="name" required /><label
-                    for="email"
-                    class="form__label"
-                    >Email:</label
-                ><input type="email" class="form__input" placeholder="Type your email" id="email" name="email" /><label
-                    for="phone"
-                    class="form__label"
-                    >Phone:</label
-                ><input type="text" class="form__input" placeholder="Type your phone number" id="phone" name="phone" required /><label
-                    for="text"
-                    class="form__label"
-                    >Your message:</label
-                ><textarea class="form__textarea form__input" placeholder="Type your message" id="text" name="comment" required></textarea
-                ><input type="submit" value="Submit Message" href="#" class="btn btn--primary form__submit" />
-            </form>
-        </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+      </div>
+    </section>
+    <section data-index="2" class="skills" id="skills">
+      <h2 class="h2">My Skills</h2>
+      <p class="p skills__text">
+        Since 2018, I have been learning Web Development, and this has equipped
+        me with enough skills to become a resourcefull Frontend Developer. My
+        four years of Bachelor's education in Computer Science at University of
+        Westminster also played a significant role in improving my programming
+        skills. Additionally, the three-month course I took at private education
+        center was instrumental in laying the foundation in this field. I also
+        decided to enhance my skills through self-study and completed a dozen
+        online courses. Below are some of my primary technical skills related to
+        Web Development.
+      </p>
+      <div class="skills__content">
+        <div class="skills__card">
+          <h3 class="h3">HTML/CSS</h3>
+          <ul>
+            <li>Semantic HTML markup</li>
+            <li>Integrating HTML/CSS and JavaScript</li>
+            <li>Bootstrap 3/4</li>
+            <li>Adaptive/Responsive</li>
+            <li>BEM Methodology</li>
+            <li>SASS(SCSS)</li>
+          </ul>
+        </div>
+        <div class="skills__card">
+          <h3 class="h3">JavaScript</h3>
+          <ul>
+            <li>jQuery</li>
+            <li>MERN Stack</li>
+            <li>ReactJS</li>
+            <li>NodeJS/Express</li>
+            <li>Proficient documentation user</li>
+            <li>DB - MongoDB</li>
+          </ul>
+        </div>
+        <div class="skills__card">
+          <h3 class="h3">Others</h3>
+          <ul>
+            <li>C#.NET (Intermediate)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section data-index="3" class="projects" id="projects">
+      <h2 class="h2">My Projects</h2>
+      <div class="projects__item">
+        <img
+          src="img/projects/workandtravel.png"
+          alt="Bloggy Project Screenshot"
+          class="projects__item-img"
+        />
+        <div class="projects__item-details">
+          <h4 class="h4">Work and Travel</h4>
+          <a
+            href="https://github.com/khassanboi/globalfriends-wt-page-22"
+            class="btn btn--primary"
+            target="_blank"
+          >
+            <svg>
+              <use xlink:href="fonts/sprite.svg#i-github"></use>
+            </svg>
+            Code
+          </a>
+          <a
+            href="https://workandtravel.uz/"
+            class="btn btn--primary"
+            target="_blank"
+          >
+            <svg>
+              <use xlink:href="fonts/sprite.svg#i-embed"></use>
+            </svg>
+            Demo
+          </a>
+        </div>
+      </div>
+      <div class="projects__item">
+        <img
+          src="img/projects/campusa.png"
+          alt="Bloggy Project Screenshot"
+          class="projects__item-img"
+        />
+        <div class="projects__item-details">
+          <h4 class="h4">Camp USA</h4>
+          <a
+            href="https://github.com/khassanboi/globalfriends-camp-page"
+            class="btn btn--primary"
+            target="_blank"
+          >
+            <svg>
+              <use xlink:href="fonts/sprite.svg#i-github"></use>
+            </svg>
+            Code
+          </a>
+          <a
+            href="https://campusa.uz/"
+            class="btn btn--primary"
+            target="_blank"
+          >
+            <svg>
+              <use xlink:href="fonts/sprite.svg#i-embed"></use>
+            </svg>
+            Demo
+          </a>
+        </div>
+      </div>
+      <a href="./small-projects.html" class="projects__link">
+        Other Small Educational Projects
+      </a>
+    </section>
+    <section data-index="4" class="contacts" id="contacts">
+      <h2 class="h2">Contact Me</h2>
+      <a
+        href="https://www.facebook.com/khassanboi/"
+        class="contacts__account"
+        target="_blank"
+      >
+        <svg class="contacts__account-icon">
+          <use xlink:href="fonts/sprite.svg#i-facebook"></use>
+        </svg>
+        Facebook
+      </a>
+      <a
+        href="https://www.instagram.com/khassanboi/"
+        class="contacts__account"
+        target="_blank"
+      >
+        <svg class="contacts__account-icon">
+          <use xlink:href="fonts/sprite.svg#i-instagram"></use>
+        </svg>
+        Instagram
+      </a>
+      <a
+        href="https://telegram.me/khassanboi/"
+        class="contacts__account"
+        target="_blank"
+      >
+        <svg class="contacts__account-icon">
+          <use xlink:href="fonts/sprite.svg#i-telegram"></use>
+        </svg>
+        Telegram
+      </a>
+      <a
+        href="https://github.com/khassanboi"
+        class="contacts__account"
+        target="_blank"
+      >
+        <svg class="contacts__account-icon">
+          <use xlink:href="fonts/sprite.svg#i-github"></use>
+        </svg>
+        Github
+      </a>
+      <a
+        href="mailto:khassanboi@gmail.com"
+        class="contacts__account contacts__account--email"
+        >khassanboi@gmail.com
+      </a>
+      <h4 class="h4 contacts__h4">OR</h4>
+      <p class="contacts__p">fill the form below</p>
+      <form
+        action="mailto:khassanboi@gmail.com"
+        class="form"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name" class="form__label">Name:</label
+        ><input
+          type="text"
+          class="form__input"
+          id="name"
+          placeholder="Type your name"
+          name="name"
+          required
+        /><label for="email" class="form__label">Email:</label
+        ><input
+          type="email"
+          class="form__input"
+          placeholder="Type your email"
+          id="email"
+          name="email"
+        /><label for="phone" class="form__label">Phone:</label
+        ><input
+          type="text"
+          class="form__input"
+          placeholder="Type your phone number"
+          id="phone"
+          name="phone"
+          required
+        /><label for="text" class="form__label">Your message:</label
+        ><textarea
+          class="form__textarea form__input"
+          placeholder="Type your message"
+          id="text"
+          name="comment"
+          required
+        ></textarea
+        ><input
+          type="submit"
+          value="Submit Message"
+          href="#"
+          class="btn btn--primary form__submit"
+        />
+      </form>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
