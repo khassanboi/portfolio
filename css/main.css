@@ -441,9 +441,8 @@ p.light {
   }
 }
 .nav__img {
-  width: 7rem;
+  width: 4rem;
   height: auto;
-  border-radius: 50%;
   margin-bottom: 2rem;
 }
 @media only screen and (max-width: 50em) {
@@ -461,6 +460,7 @@ p.light {
 .nav__list {
   list-style: none;
   margin-left: -3rem;
+  min-height: 50%;
 }
 .nav__item {
   padding-left: 3rem;
@@ -545,7 +545,7 @@ p.light {
 @media only screen and (max-width: 50em) {
   .nav-line {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
     grid-column: nav-start/main-end;
@@ -595,12 +595,16 @@ p.light {
   }
 }
 @media only screen and (max-width: 50em) {
+  .nav-line-co {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .nav-line img {
     margin: 0 2rem;
-    width: 5rem;
+    margin-right: 4rem;
+    width: 3rem;
   }
-}
-@media only screen and (max-width: 50em) {
   .nav-line .nav-btn__icon {
     height: 4rem;
     width: 4rem;

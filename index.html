@@ -9,26 +9,50 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+
     <title>Portfolio | Hassan Khabibullaev</title>
   </head>
   <body class="container">
     <div class="nav-line">
+      <div class="nav-line-co">
+        <img src="img/logo-white.png" alt="Profile Photo" class="nav__img" />
+        <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
+      </div>
       <a href="#" id="nav-btn">
         <svg class="nav-btn__icon">
           <use xlink:href="fonts/sprite.svg#i-menu"></use>
         </svg>
       </a>
-      <img src="img/avatar.jpg" alt="Profile Photo" class="nav__img" />
-      <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
     </div>
     <nav class="nav">
       <span class="nav__x">&#10005; </span
-      ><img src="img/avatar.jpg" alt="Profile Photo" class="nav__img left" />
+      ><img
+        src="img/logo-white.png"
+        alt="Profile Photo"
+        class="nav__img left"
+      />
       <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
       <p class="nav__slogan">
         Software Engineer | <br />
-        Web Developer
+        Web Frontend Developer
       </p>
       <ul class="nav__list">
         <li class="nav__item">
@@ -73,17 +97,6 @@
         </li>
       </ul>
       <ul class="nav__account-list">
-        <li class="nav__account-item">
-          <a
-            href="https://www.facebook.com/khassanboi/"
-            class="nav__account-link"
-            target="_blank"
-          >
-            <svg class="nav__account-icon">
-              <use xlink:href="fonts/sprite.svg#i-facebook"></use>
-            </svg>
-          </a>
-        </li>
         <li class="nav__account-item">
           <a
             href="https://www.instagram.com/khassanboi/"
@@ -150,14 +163,12 @@
       <div class="about__content">
         <h3 class="h3">Hello,</h3>
         <p class="about__text">
-          As a Resourceful Web Developer, I have a strong understanding of
-          current technology trends and specialize in producing clean websites
-          and web applications. I am skilled in handling complex HTML, CSS, and
-          JS coding, as well as designing and implementing extensions to meet
-          specific front-facing needs. With a keen attention to detail, I work
-          closely with clients to define project expectations and requirements.
-          With a great sense of creativity and humour, it would be my pleasure
-          to collaborate with you !
+          I'm a skilled Web Frontend Developer with expertise in creating
+          modern, clean websites and web applications. I excel in complex HTML,
+          CSS, and JavaScript coding to meet front-end needs. Detail-oriented
+          and proficient at problem-solving, I'm committed to delivering
+          high-performance solutions. Let's collaborate to bring your digital
+          projects to life.
         </p>
         <p class="about__detail">Name: <span>Hassan Khabibullaev</span></p>
         <p class="about__detail">Age: <span>22</span></p>
@@ -229,6 +240,8 @@
           <h3 class="h3">Others</h3>
           <ul>
             <li>C#.NET (Intermediate)</li>
+            <li>Java/Android (Intermediate)</li>
+            <li>Python (Intermediate)</li>
           </ul>
         </div>
       </div>
@@ -302,16 +315,6 @@
     <section data-index="4" class="contacts" id="contacts">
       <h2 class="h2">Contact Me</h2>
       <a
-        href="https://www.facebook.com/khassanboi/"
-        class="contacts__account"
-        target="_blank"
-      >
-        <svg class="contacts__account-icon">
-          <use xlink:href="fonts/sprite.svg#i-facebook"></use>
-        </svg>
-        Facebook
-      </a>
-      <a
         href="https://www.instagram.com/khassanboi/"
         class="contacts__account"
         target="_blank"
@@ -346,9 +349,9 @@
         class="contacts__account contacts__account--email"
         >khassanboi@gmail.com
       </a>
-      <h4 class="h4 contacts__h4">OR</h4>
-      <p class="contacts__p">fill the form below</p>
-      <form
+      <!-- <h4 class="h4 contacts__h4">OR</h4>
+      <p class="contacts__p">fill the form below</p> -->
+      <!-- <form
         action="mailto:khassanboi@gmail.com"
         class="form"
         method="post"
@@ -391,7 +394,7 @@
           href="#"
           class="btn btn--primary form__submit"
         />
-      </form>
+      </form> -->
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
