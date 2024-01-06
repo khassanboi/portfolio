@@ -39,7 +39,7 @@ body {
 .container {
   transition: all 0.2s;
   padding: 5rem 0;
-  background-color: rgba(74, 99, 231, 0.1);
+  background-color: rgba(0, 34, 119, 0.1);
   display: grid;
   grid-template-columns: [border-left-start] 0.2fr [border-left-end nav-start] 1.9fr [nav-end main-start] 6fr [main-end border-right-start] 0.2fr [border-right-end];
   grid-template-rows: min-content minmax(min-content, 55rem);
@@ -142,7 +142,7 @@ p.light {
   height: 0.8rem;
   width: 0.8rem;
   border-radius: 50%;
-  background-color: #ff5959;
+  background-color: #e65050;
   position: absolute;
   bottom: 4px;
   margin-left: 3px;
@@ -224,21 +224,21 @@ p.light {
 }
 
 .btn--primary {
-  background-color: #ff5959;
-  border: 1px solid #ff5959;
-}
-.btn--primary:hover {
   background-color: #e65050;
   border: 1px solid #e65050;
 }
+.btn--primary:hover {
+  background-color: #ff5959;
+  border: 1px solid #ff5959;
+}
 
 .btn--secondary {
-  background-color: #3498db;
-  border: 1px solid #3498db;
+  background-color: #0044bb;
+  border: 1px solid #0044bb;
 }
 .btn--secondary:hover {
-  background-color: #4a63e7;
-  border: 1px solid #4a63e7;
+  background-color: #0051dc;
+  border: 1px solid #0051dc;
 }
 
 .btn--light {
@@ -256,7 +256,7 @@ p.light {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(to right bottom, rgba(74, 99, 231, 0.95), rgba(52, 152, 219, 0.9));
+  background-image: linear-gradient(to right bottom, rgba(0, 34, 119, 0.95), rgba(0, 68, 187, 0.9));
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
@@ -351,7 +351,7 @@ p.light {
   position: sticky;
   transition: all 0.5s;
   height: 55rem;
-  background-image: linear-gradient(to right bottom, #4a63e7, #3498db);
+  background-image: linear-gradient(to right bottom, #002277, #0044bb);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
   padding: 3rem;
   padding-bottom: 2.5rem;
@@ -496,7 +496,7 @@ p.light {
   justify-content: center;
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #ff5959;
+  background-color: #e65050;
   border-radius: 50%;
   margin-right: 0.5rem;
   transition: all 0.5s;
@@ -505,7 +505,7 @@ p.light {
   background-color: #fff;
 }
 .nav__account-item:hover .nav__account-icon {
-  fill: #ff5959;
+  fill: #e65050;
 }
 .nav__account-link {
   width: 100%;
@@ -551,7 +551,7 @@ p.light {
     grid-column: nav-start/main-end;
     height: -moz-min-content;
     height: min-content;
-    background-color: #4a63e7;
+    background-color: #002277;
     height: -moz-fit-content;
     height: fit-content;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
@@ -760,7 +760,7 @@ p.light {
   left: 0;
   width: 100%;
   height: 30%;
-  background-color: #6b83fa;
+  background-color: rgba(0, 68, 187, 0.95);
   -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
   display: grid;
@@ -887,6 +887,7 @@ p.light {
   justify-content: center;
   transition: transform 0.5s, background-color 0.3s;
   backface-visibility: hidden;
+  border: 1px solid #ff5959;
 }
 @media only screen and (max-width: 37.5em) {
   .contacts__account:link, .contacts__account:visited {
@@ -901,6 +902,7 @@ p.light {
   }
 }
 .contacts__account--email:link, .contacts__account--email:visited, .contacts__account--phone:link, .contacts__account--phone:visited {
+  border: 1px solid #ff5959;
   font-size: 1.8rem;
   padding: 1rem 4rem;
 }
@@ -915,9 +917,9 @@ p.light {
 }
 .contacts__account:hover, .contacts__account:active {
   background-image: none;
+  border: 1px solid #ff5959;
   background-color: #fff;
   color: #ff5959;
-  transform: scale(1.15);
 }
 .contacts__account-icon {
   height: 2rem;
