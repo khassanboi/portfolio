@@ -161,7 +161,7 @@
     justify-content: center;
     width: 3.5rem;
     height: 3.5rem;
-    background-color: $accent-light;
+    background-color: $accent-dark;
     border-radius: 50%;
     margin-right: 0.5rem;
     transition: all 0.5s;
@@ -170,7 +170,7 @@
       background-color: #fff;
 
       .nav__account-icon {
-        fill: $accent-light;
+        fill: $accent-dark;
       }
     }
   }
