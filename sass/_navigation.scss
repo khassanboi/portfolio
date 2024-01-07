@@ -76,7 +76,7 @@
     width: 25rem;
   }
 
-  &__x {
+  &__close-btn {
     display: none;
 
     @media only screen and (max-width: $bp-sm) {
@@ -102,7 +102,7 @@
     height: auto;
     margin-bottom: 2rem;
 
-    &.left {
+    &--left {
       @media only screen and (max-width: $bp-sm) {
         display: none;
       }
@@ -205,7 +205,7 @@
   background-color: #fff;
 }
 
-.nav-visible {
+.nav-line__visible {
   transform: translateX(0);
 }
 
@@ -229,24 +229,22 @@
       @include nav-visible;
     }
 
-    &-co {
+    &__container {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-    img {
+    &__img {
       margin: 0 2rem;
       margin-right: 4rem;
       width: 3rem;
     }
 
-    .nav-btn {
-      &__icon {
-        height: 4rem;
-        width: 4rem;
-        fill: #fff;
-      }
+    &__btn-icon {
+      height: 4rem;
+      width: 4rem;
+      fill: #fff;
     }
   }
 }

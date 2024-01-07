@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio | Hassan Khabibullaev</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,27 +27,32 @@
       href="img/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
-
-    <title>Portfolio | Hassan Khabibullaev</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body class="container">
-    <div class="nav-line">
-      <div class="nav-line-co">
-        <img src="img/logo-white.png" alt="Profile Photo" class="nav__img" />
+    <nav class="nav-line">
+      <div class="nav-line__container">
+        <img
+          src="img/logo-white.png"
+          alt="Profile Photo"
+          class="nav-line__img"
+        />
         <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
       </div>
-      <a href="#" id="nav-btn">
-        <svg class="nav-btn__icon">
+      <a href="#" id="nav-line__btn">
+        <svg class="nav-line__btn-icon">
           <use xlink:href="fonts/sprite.svg#i-menu"></use>
         </svg>
       </a>
-    </div>
+    </nav>
+
     <nav class="nav">
-      <span class="nav__x">&#10005; </span
-      ><img
+      <span class="nav__close-btn">&#10005; </span>
+      <img
         src="img/logo-white.png"
         alt="Profile Photo"
-        class="nav__img left"
+        class="nav__img nav__img--left"
       />
       <h1 class="h1 h1--light">Hassan Khabibullaev</h1>
       <p class="nav__slogan">
@@ -148,6 +153,7 @@
       </ul>
       <p class="nav__copyright">&copy; 2024 Hassan Khabibullaev</p>
     </nav>
+
     <header data-index="0" class="header" id="header">
       <h1 class="h1 header__h1">I'm Hassan Khabibullaev</h1>
       <p class="light header__p">
@@ -173,6 +179,7 @@
         </a>
       </div>
     </header>
+
     <section data-index="1" class="about" id="about">
       <h2 class="h2">About Me</h2>
       <img src="img/avatar.jpg" alt="Profile Photo" class="about__img" />
@@ -186,12 +193,22 @@
           high-performance solutions. Let's collaborate to bring your digital
           projects to life.
         </p>
-        <p class="about__detail">Name: <span>Hassan Khabibullaev</span></p>
-        <p class="about__detail">Age: <span>23</span></p>
-        <p class="about__detail">Location: <span>Tashkent, Uzbekistan</span></p>
+        <p class="about__detail">
+          Name: <span class="about__detail--answer">Hassan Khabibullaev</span>
+        </p>
+        <p class="about__detail">
+          Age: <span class="about__detail--answer">23</span>
+        </p>
+        <p class="about__detail">
+          Location:
+          <span class="about__detail--answer">Tashkent, Uzbekistan</span>
+        </p>
         <p class="about__detail">
           Languages:
-          <span>Uzbek (Native), English (Fluent), Russian (Fluent)</span>
+          <span class="about__detail--answer"
+            >Uzbek (Native), English (Fluent - IELTS 8.0), Russian
+            (Fluent)</span
+          >
         </p>
         <div class="about__buttons">
           <a
@@ -217,6 +234,7 @@
         </div>
       </div>
     </section>
+
     <section data-index="2" class="skills" id="skills">
       <h2 class="h2">My Skills</h2>
       <p class="p skills__text">
@@ -232,37 +250,43 @@
       </p>
       <div class="skills__content">
         <div class="skills__card">
-          <h3 class="h3">HTML/CSS</h3>
-          <ul>
-            <li>Semantic HTML markup</li>
-            <li>Integrating HTML/CSS and JavaScript</li>
-            <li>Bootstrap 3/4</li>
-            <li>Adaptive/Responsive</li>
-            <li>BEM Methodology</li>
-            <li>SASS(SCSS)</li>
+          <h3 class="skills__card-title h3">HTML/CSS</h3>
+          <ul class="skills__card-list">
+            <li class="skills__card-list-item">Semantic HTML markup</li>
+            <li class="skills__card-list-item">
+              Integrating HTML/CSS and JavaScript
+            </li>
+            <li class="skills__card-list-item">Bootstrap 3/4</li>
+            <li class="skills__card-list-item">Adaptive/Responsive</li>
+            <li class="skills__card-list-item">BEM Methodology</li>
+            <li class="skills__card-list-item">SASS(SCSS)</li>
           </ul>
         </div>
         <div class="skills__card">
-          <h3 class="h3">JavaScript</h3>
-          <ul>
-            <li>jQuery</li>
-            <li>MERN Stack</li>
-            <li>ReactJS</li>
-            <li>NodeJS/Express</li>
-            <li>Proficient documentation user</li>
-            <li>DB - MongoDB</li>
+          <h3 class="skills__card-title h3">JavaScript</h3>
+          <ul class="skills__card-list">
+            <li class="skills__card-list-item">jQuery</li>
+            <li class="skills__card-list-item">MERN Stack (Junior)</li>
+            <li class="skills__card-list-item">ReactJS (Junior)</li>
+            <li class="skills__card-list-item">NodeJS/Express (Junior)</li>
+            <li class="skills__card-list-item">
+              Proficient documentation user
+            </li>
+            <li class="skills__card-list-item">DB - MongoDB (Junior)</li>
           </ul>
         </div>
         <div class="skills__card">
-          <h3 class="h3">Others</h3>
-          <ul>
-            <li>C#.NET (Intermediate)</li>
-            <li>Java/Android (Intermediate)</li>
-            <li>Python (Intermediate)</li>
+          <h3 class="skills__card-title h3">Others</h3>
+          <ul class="skills__card-list">
+            <li class="skills__card-list-item">Git, GitHub, GitHub Desktop</li>
+            <li class="skills__card-list-item">C#.NET (Intermediate)</li>
+            <li class="skills__card-list-item">Java/Android (Intermediate)</li>
+            <li class="skills__card-list-item">Python (Intermediate)</li>
           </ul>
         </div>
       </div>
     </section>
+
     <section data-index="3" class="projects" id="projects">
       <h2 class="h2">My Projects</h2>
       <div class="projects__item">
@@ -275,7 +299,7 @@
           <h4 class="h4">Work and Travel</h4>
           <a
             href="https://github.com/khassanboi/globalfriends-wt-page-22"
-            class="btn btn--primary"
+            class="projects__item-btn btn btn--primary"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -286,7 +310,7 @@
           </a>
           <a
             href="https://workandtravel.uz/"
-            class="btn btn--primary"
+            class="projects__item-btn btn btn--primary"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -307,7 +331,7 @@
           <h4 class="h4">Camp USA</h4>
           <a
             href="https://github.com/khassanboi/globalfriends-camp-page"
-            class="btn btn--primary"
+            class="projects__item-btn btn btn--primary"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -318,7 +342,7 @@
           </a>
           <a
             href="https://campusa.uz/"
-            class="btn btn--primary"
+            class="projects__item-btn btn btn--primary"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -333,6 +357,7 @@
         Other Small Educational Projects
       </a>
     </section>
+
     <section data-index="4" class="contacts" id="contacts">
       <h2 class="h2">Contact Me</h2>
       <a

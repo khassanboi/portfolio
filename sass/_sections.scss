@@ -53,7 +53,7 @@
       grid-template-columns: 0.6fr 1fr;
     }
 
-    span {
+    &--answer {
       color: #000;
     }
   }
@@ -97,21 +97,6 @@
     display: flex;
     flex-direction: column;
 
-    .h3 {
-      margin: 1rem 0;
-    }
-
-    ul {
-      list-style: none;
-
-      li {
-        font-size: 1.3rem;
-        font-family: $font-primary;
-        color: #777;
-        padding: 0.5rem 0;
-      }
-    }
-
     @media only screen and (max-width: $bp-xxs) {
       padding: 2rem 0;
 
@@ -119,6 +104,21 @@
         grid-column: 1 / -1;
       }
     }
+  }
+
+  &__card-title {
+    margin: 1rem 0;
+  }
+
+  &__card-list {
+    list-style: none;
+  }
+
+  &__card-list-item {
+    font-size: 1.3rem;
+    font-family: $font-primary;
+    color: #777;
+    padding: 0.5rem 0;
   }
 }
 
@@ -340,71 +340,5 @@
     grid-column: 1 / -1;
     justify-self: center;
     color: #555;
-  }
-
-  .form {
-    padding: 0 14rem;
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr;
-    grid-gap: 2.5rem;
-    align-items: center;
-
-    @media only screen and (max-width: $bp-xs) {
-      grid-template-columns: 1fr;
-      grid-gap: 1.5rem;
-      padding: 0 8rem;
-    }
-
-    @media only screen and (max-width: $bp-xxs) {
-      padding: 0 3rem;
-    }
-
-    &__label {
-      font-size: 1.5rem;
-      color: #555;
-
-      @media only screen and (max-width: $bp-xs) {
-        display: none;
-      }
-    }
-
-    &__input {
-      outline: none;
-      border: 1px solid #ccc;
-      border-radius: 10rem;
-      background-color: #fff;
-      padding: 1.2rem 2rem;
-      transition: box-shadow 0.3s;
-      font-size: 1.2rem;
-
-      &:placeholder-shown {
-        font-family: $font-primary;
-        font-size: 1.1rem;
-        color: #777;
-      }
-
-      &:focus {
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-      }
-    }
-
-    &__textarea {
-      resize: none;
-      font-family: $font-primary;
-      font-size: 1.1rem;
-    }
-
-    &__submit {
-      border: none;
-      padding: 1.5rem 3rem;
-      cursor: pointer;
-      grid-column: 1 / -1;
-      justify-self: center;
-      outline: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
   }
 }

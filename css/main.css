@@ -419,11 +419,11 @@ p.light {
     width: 25rem;
   }
 }
-.nav__x {
+.nav__close-btn {
   display: none;
 }
 @media only screen and (max-width: 50em) {
-  .nav__x {
+  .nav__close-btn {
     display: block;
     position: absolute;
     top: 2rem;
@@ -446,7 +446,7 @@ p.light {
   margin-bottom: 2rem;
 }
 @media only screen and (max-width: 50em) {
-  .nav__img.left {
+  .nav__img--left {
     display: none;
   }
 }
@@ -535,7 +535,7 @@ p.light {
   background-color: #fff;
 }
 
-.nav-visible {
+.nav-line__visible {
   transform: translateX(0);
 }
 
@@ -595,17 +595,17 @@ p.light {
   }
 }
 @media only screen and (max-width: 50em) {
-  .nav-line-co {
+  .nav-line__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .nav-line img {
+  .nav-line__img {
     margin: 0 2rem;
     margin-right: 4rem;
     width: 3rem;
   }
-  .nav-line .nav-btn__icon {
+  .nav-line__btn-icon {
     height: 4rem;
     width: 4rem;
     fill: #fff;
@@ -666,7 +666,7 @@ p.light {
     grid-template-columns: 0.6fr 1fr;
   }
 }
-.about__detail span {
+.about__detail--answer {
   color: #000;
 }
 .about__buttons {
@@ -708,18 +708,6 @@ p.light {
   display: flex;
   flex-direction: column;
 }
-.skills__card .h3 {
-  margin: 1rem 0;
-}
-.skills__card ul {
-  list-style: none;
-}
-.skills__card ul li {
-  font-size: 1.3rem;
-  font-family: "Open Sans", sans-serif;
-  color: #777;
-  padding: 0.5rem 0;
-}
 @media only screen and (max-width: 31.25em) {
   .skills__card {
     padding: 2rem 0;
@@ -727,6 +715,18 @@ p.light {
   .skills__card:last-child {
     grid-column: 1/-1;
   }
+}
+.skills__card-title {
+  margin: 1rem 0;
+}
+.skills__card-list {
+  list-style: none;
+}
+.skills__card-list-item {
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  padding: 0.5rem 0;
 }
 
 .projects {
@@ -937,71 +937,4 @@ p.light {
   grid-column: 1/-1;
   justify-self: center;
   color: #555;
-}
-.contacts .form {
-  padding: 0 14rem;
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  grid-gap: 2.5rem;
-  align-items: center;
-}
-@media only screen and (max-width: 37.5em) {
-  .contacts .form {
-    grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
-    padding: 0 8rem;
-  }
-}
-@media only screen and (max-width: 31.25em) {
-  .contacts .form {
-    padding: 0 3rem;
-  }
-}
-.contacts .form__label {
-  font-size: 1.5rem;
-  color: #555;
-}
-@media only screen and (max-width: 37.5em) {
-  .contacts .form__label {
-    display: none;
-  }
-}
-.contacts .form__input {
-  outline: none;
-  border: 1px solid #ccc;
-  border-radius: 10rem;
-  background-color: #fff;
-  padding: 1.2rem 2rem;
-  transition: box-shadow 0.3s;
-  font-size: 1.2rem;
-}
-.contacts .form__input:-moz-placeholder-shown {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;
-  color: #777;
-}
-.contacts .form__input:placeholder-shown {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;
-  color: #777;
-}
-.contacts .form__input:focus {
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-}
-.contacts .form__textarea {
-  resize: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;
-}
-.contacts .form__submit {
-  border: none;
-  padding: 1.5rem 3rem;
-  cursor: pointer;
-  grid-column: 1/-1;
-  justify-self: center;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }/*# sourceMappingURL=main.css.map */
