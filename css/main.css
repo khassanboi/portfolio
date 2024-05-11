@@ -350,7 +350,8 @@ p.light {
   width: 28rem;
   position: sticky;
   transition: all 0.5s;
-  height: 55rem;
+  height: -moz-fit-content;
+  height: fit-content;
   background-image: linear-gradient(to right bottom, #002277, #0044bb);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
   padding: 3rem;
@@ -427,7 +428,7 @@ p.light {
     display: block;
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 0;
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
@@ -523,6 +524,9 @@ p.light {
   justify-content: end;
   margin-top: 2rem;
   color: #eee;
+}
+.nav-visible {
+  transform: translateX(0);
 }
 @media only screen and (max-width: 50em) {
   .nav {
