@@ -85,11 +85,12 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
 
     @media only screen and (max-width: $bp-xxs) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
@@ -119,6 +120,40 @@
     font-family: $font-primary;
     color: #777;
     padding: 0.5rem 0;
+  }
+}
+
+.experience {
+  &__content {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-title-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card-company {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  &__card-list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    gap: 1rem;
+    margin-left: 3rem;
   }
 }
 
