@@ -158,13 +158,19 @@
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 
-  @media only screen and (max-width: $bp-sm) {
-    grid-template-columns: 1fr;
-    grid-gap: 3rem;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    @media only screen and (max-width: $bp-sm) {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+    }
   }
 
   &__item {
@@ -250,7 +256,7 @@
     }
   }
 
-  .btn {
+  .btn:not(.projects__btn) {
     position: relative;
     top: 200%;
     font-size: 1.2rem;
@@ -270,6 +276,10 @@
       width: 90%;
       padding: 0.5rem 1.5rem;
     }
+  }
+
+  &__btn {
+    align-self: center;
   }
 
   @media only screen and (min-width: $bp-sm) {
