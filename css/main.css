@@ -428,7 +428,7 @@ p.light {
     display: block;
     position: absolute;
     top: 2rem;
-    right: 0;
+    right: 2rem;
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
@@ -700,9 +700,8 @@ p.light {
 }
 .skills__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 3rem;
-  grid-row-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
 @media only screen and (max-width: 31.25em) {
   .skills__content {
@@ -714,9 +713,6 @@ p.light {
   flex-direction: column;
 }
 @media only screen and (max-width: 31.25em) {
-  .skills__card {
-    padding: 2rem 0;
-  }
   .skills__card:last-child {
     grid-column: 1/-1;
   }

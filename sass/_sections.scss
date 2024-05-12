@@ -85,9 +85,8 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 3rem;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
 
     @media only screen and (max-width: $bp-xxs) {
       grid-template-columns: repeat(1, 1fr);
@@ -99,8 +98,6 @@
     flex-direction: column;
 
     @media only screen and (max-width: $bp-xxs) {
-      padding: 2rem 0;
-
       &:last-child {
         grid-column: 1 / -1;
       }
