@@ -10,7 +10,6 @@
   );
   box-shadow: $shadow;
   padding: 3rem;
-  padding-bottom: 2.5rem;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
@@ -68,6 +67,7 @@
 
   @media only screen and (max-width: $bp-sm) {
     transform: translateX(-140%);
+    padding-top: 10rem;
   }
 
   @media only screen and (max-width: $bp-xs) {
@@ -102,11 +102,11 @@
     height: auto;
     margin-bottom: 2rem;
 
-    &--left {
-      @media only screen and (max-width: $bp-sm) {
-        display: none;
-      }
-    }
+    // &--left {
+    //   @media only screen and (max-width: $bp-sm) {
+    //     display: none;
+    //   }
+    // }
   }
 
   &__slogan {

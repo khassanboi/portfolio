@@ -136,6 +136,10 @@
   &__card-title-container {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-sm) {
+      flex-direction: column;
+    }
   }
 
   &__card-company {
